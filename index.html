@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Apple_logo_grey.svg.png" type="image/png">
+    <title>Apple (India)</title>
+    <script src="https://kit.fontawesome.com/c35c55ffe0.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Slab:wght@100&display=swap');
+        body{
+            width: 100%;
+            /* max-width: 960px; */
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: rgb(11, 133, 155);
+        }
+        header{
+            /* background-color: rgb(66, 66, 66); */
+            padding-bottom: 0px;
+        }
+        .nav{
+            width: 100%;
+            /* flex-basis: 10px; */
+            display: flex;
+            position: fixed;
+            background-color: rgb(66, 66, 66);
+        }
+        .nav ul{
+            align-content:flex-end;
+            display: flex;
+            /* align-items: flex-end; */
+            padding-left: 140px;
+            flex-grow: 3;
+            
+        }
+        .nav ul li{
+           
+            padding: 20px;
+            padding-bottom: 0px;
+            list-style-type: none;
+            padding-top: 0px;
+        }
+        .nav ul li a{
+            color:rgb(218, 222, 224);
+            text-decoration: none;
+
+        }
+        .nav ul li a:hover{
+            color:aliceblue;
+        }
+        .nav li img{
+            height: 15px;
+            width: 15px;
+        }
+        .offer{
+           
+            background-color:rgb(218, 222, 224);
+            color: black;
+            font-size: larger;
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 20px;
+            height: 40px;
+            margin-bottom: 0px;
+        }
+        .laptop{
+            background-color: black;
+            height: 800px;
+        }
+        .laptop h1{
+            color: white;
+            text-align: center;
+            font-size: 55px;
+            font-weight: bold;
+            padding-top: 30px;
+            padding-bottom: 4px;
+            margin-bottom: 0px;
+        }
+        .sub-lap{
+            margin-top: 0px;
+            margin-bottom: 100px;
+        }
+        .sub-lap h3{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            float: left;
+            justify-content: center;
+            padding-left: 38%;
+          
+
+        }
+        .sub-lap img{
+            height: 100px;
+            width: 100px;
+            float: right;
+           padding-right: 38%;;
+        }
+        .sub-lap-link{
+            text-align: center;
+            margin-top: 20px;
+            padding-right: 25px; 
+            
+        }
+        .sub-lap-link a{
+            font-size: 24px;
+            padding-top: 20px;
+            padding: 20px;
+            text-decoration: none;
+            color:rgb(16, 156, 180);
+        }
+        .lappy img{
+            width: 800px;
+            height: 500px;
+            display: block;
+            margin: auto;
+        }
+        .air{
+            text-align: center;
+            height: 500px;
+
+        }
+        .air img{
+            float:right;
+            margin-right: 25%;
+        }
+        .air h1{
+            /* color: white; */
+            padding-left: 130px;
+            font-size: 55px;
+            font-weight: bold;
+            padding-top: 120px;
+            padding-bottom: 4px;
+            margin-bottom: 0px;
+            margin-top: 50px;
+        }
+        .sub-air{
+            width: 40%;
+            height: 100px;
+            margin-left: 120px;
+        }
+        .sub-air img{
+            float: right;
+            height: 50px;
+            width: 50px;
+            /* display: block; */
+            margin-right: 10%;
+            padding-left: 10px;
+        }
+        .sub-air h3{
+            float: left;
+            margin-left: 25px;
+            font-size: 23px;
+            padding-left: 20px;
+            padding-top: 5px;
+        }
+        .sub-air-link{
+            font-size: 24px;
+            padding-top: 5px;
+            text-align:center;
+            text-decoration: none;
+            padding-left: 78px;
+            color:rgb(25, 189, 218);
+        }
+        .sub-air-link a{
+            padding: 20px;
+            padding-top: 5px;
+            text-decoration: none;
+        }
+        .charge{
+            margin-top: 300px;
+            background-color: rgb(248, 245, 245);
+            text-align: center;
+            
+        }
+        .charge h1{
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 20px;
+            font-size: 60px;
+            margin-bottom: 0px;
+        }
+        .charge i{
+            color: rgb(255, 10, 173);
+        }
+        .charge h3{
+            text-align: center;
+            font-size: 26px;
+            margin-top: 0px;
+            padding-top: 12px;
+        }
+        .charge a{
+            font-size: 24px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+        .sub-charge img{
+            height: 400px;
+            width: 500px;
+        }
+        .container{
+            /* background-color: rgb(145, 146, 146); */
+            display: flex;
+        }
+        .sub-container{
+            text-align: center;
+            height: 120vh;
+            width:50%;
+            margin: 10px;
+            background-size: cover;
+            padding-top: 20px;
+            color: white;
+        }
+        .sub-container h3{
+            color: black;
+        }
+        
+        
+        .sub-container1{
+            background-image: url('iphone\ 2.png');
+            background-size: 200px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sub-container1 h1,h3,h4{
+            color: black;
+        }
+        .sub-container h1{
+            color: black;
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+        .sub-container a{
+            font-size:23px;
+            padding: 12px;
+            margin: 14px;
+            text-decoration: none;
+        }
+        .sub-container2{
+            background-image: url('watch\ 2.jpg');
+            background-size: 500px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sub-container2 h3{
+            color: rgb(209, 49, 49);
+        }
+        .sub-container3{
+            background-image: url('ipad-air\ 2.png');
+            background-size:auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: black;
+        }
+        .sub-container3 h1{
+            color: white;
+            padding-top: 2px;
+            margin-top: 2px;
+        }
+        .sub-container3 h3{
+            color: white;
+            font-size: 24px;
+            padding-top: 2px;
+            margin-top: 2px;
+        }
+        .sub-container3 h1 i{
+            color: rgb(133, 133, 248);
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+        .sub-container3 a{
+            color: rgb(133, 133, 248);
+        }
+        .sub-container3 a:hover{
+            color:rgb(248, 245, 245);
+        }
+        .sub-container4{
+            background-image: url('speaker\ 2.jpg');
+            background-size:500px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sub-container5{
+            background-image: url('Cooking-Mama-Cover.jpg');
+            background-size: 600px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sub-container6{
+            background-image: url('apple\ tv\ 2.jpg');
+            background-size: 500px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        footer{
+            border: 2px solid gray;
+            background-color: rgb(218, 222, 224);
+
+        }
+        .footer{
+            text-align: center;
+        }
+        .footer1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .footer2{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            
+        }
+        .footer2 h4{
+            text-align: center;
+            background-color: gray;
+            color: aliceblue;
+        }
+        .footer2 a{
+            text-align: justify;
+            text-decoration: none;
+            color: black;
+        }
+        .footer2 li{
+            list-style-type: none;
+            text-align: justify;
+        }
+        .footer2 a:hover{
+            color:rgb(78, 78, 78) ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><img src="Apple_logo_grey.svg.png"></a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Airpods</a></li>
+                <li><a href="#">TV & Home</a></li>
+                <li><a href="#">Only On Apple</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-store"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="offer">
+       <p> Get 5% instant Cashback up to ₹6000 with qualifying HDFC Bank credit cards on orders over ₹54900.‡<a href="#">Learn More-></a></p>
+    </div>
+
+<br>
+<br>
+<div class="laptop">
+    <h1>MacBook Pro 13"</h1>
+    <div class="sub-lap">
+        <img src="m2-1.jpg">
+    <h3>Supercharged by </h3>
+    </div>
+    <br>
+    <br>
+    <div class="sub-lap-link">
+        <a href="#">Learn More ></a>
+        <a href="#">Buy ></a>
+    </div>
+    <div class="lappy">
+        <img src="macbook_pro_with_m2.jpg">
+    </div>
+</div>
+<div class="air">
+    <img src="macbook-air 2.png">
+    <h1>MacBook Air</h1>
+    <div class="sub-air">
+    <img src="m2-1.jpg">
+    <h3>Supercharged By</h3>
+    </div>
+    <div class="sub-air-link">
+        <a href="#">Learn More ></a>
+        <a href="#">Buy ></a>
+    </div>
+
+</div>
+<div class="charge">
+    <h1>Get <i>supercharged</i> for university.</h1>
+    <h3>Save on Mac or iPad.Plus get AirPods on us.<sup>1</sup></h3>
+    <a href="#">Shop Now ></a>
+    <div class="sub-charge">
+        <img src="students.png">
+    </div>
+</div>
+<div class="container">
+<div  class="sub-container sub-container1">
+   <h1>iPhone 13 Pro</h1>
+   <h3>Oh.So.Pro.</h3>
+   <div class="container1.link">
+    <a href="#">Learn More ></a>
+    <a href="#">Buy ></a>
+   </div>
+</div>
+<div class="sub-container sub-container2">
+    <h1>WATCH</h1>
+    <h3>SERIES 7</h3>
+    <h4>It's Our Largest Display Yet.</h4>
+    <div class="container2.link">
+     <a href="#">Learn More ></a>
+     <a href="#">Buy ></a>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="sub-container sub-container3">
+    <h1>iPad<i>air</i></h1>
+    <h3>Light.Bright.Full of might.</h3>
+    <div class="container2.link">
+     <a href="#">Learn More ></a>
+     <a href="#">Buy ></a>
+    </div>
+</div>
+<div class="sub-container sub-container4">
+    <h1>Mac Studio</h1>
+    <h3>Empower station.</h3>
+    <div class="container2.link">
+     <a href="#">Learn More ></a>
+     <a href="#">Buy ></a>
+    </div>
+</div>
+</div>
+
+<div class="container">
+<div class="sub-container sub-container5">
+    <h1>Arcade</h1>
+    <h3>Cooking Mama:Cuisine!</h3>
+    <div class="container2.link">
+     <a href="#">Learn More ></a>
+     <a href="#">Buy ></a>
+    </div>
+</div>
+<div class="sub-container sub-container6">
+    <!-- <img src="Appel TV+ Logo - Download Free Vector PNG.png" alt=""> -->
+</div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer1">
+            <p>
+            ‡Instant cashback of 5% of order value is available for qualifying HDFC Bank Credit Cards & HDFC Credit Card EMI only. Offer is limited to Maximum Instant Cashback Amount of 
+            ₹6000 per successful single order of ₹54900 and above. Instant cashback is available for up to two orders per 90-day period with an eligible card. Any additional orders may be cancelled. Card eligibility is subject to terms and conditions between you and your card-issuing bank. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback reclaim, which may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Terms & conditions apply. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback.</p>
+
+<p>1. Qualified purchasers can receive promotion savings when they purchase an eligible Mac or eligible iPad with eligible AirPods at a qualifying location. Only one pair of AirPods per eligible Mac or eligible iPad per qualified purchaser. Offer is subject to availability. Subject to terms and conditions herein.</p>
+<p>2.₹99/month after free trial. Only one offer per Apple ID and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices you or your family purchases. Offer is valid for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.</p>
+<p>
+₹99/month after free trial. Only one offer per Apple ID and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices you or your family purchases. This offer is not available if you or your Family have previously accepted an Apple TV+ 1-year-free offer. Offer is valid for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.</p>
+        </div>
+        <hr><br>
+    </div>
+    <div class="footer2">
+        <div class="sub-footer1">
+            <h4>Shop and learn</h4>
+        <ul>
+            <li><a href='#'>Store</a></li>
+            <li><a href='#'>Mac</a></li>
+            <li><a href='#'>iPad</a></li>
+            <li><a href='#'>iPhone</a></li>
+            <li><a href='#'>Watch</a></li>
+            <li><a href='#'>Airpods</a></li>
+            <li><a href='#'>TV & Home</li>
+            <li><a href='#'>Accessories</li>
+        </ul>
+    </div>
+    <div class="sub-footer2">
+        <div class="sub2-1">
+        <h4>Services</h4>
+        <ul>
+            <li><a href='#'>Apple Music</a></li>
+            <li><a href='#'>Apple TV+</a></li>
+            <li><a href='#'>Apple Arcade</a></li>
+            <li><a href='#'>Apple One</a></li>
+            <li><a href='#'>Apple Books</a></li>
+            <li><a href='#'>Apple Podcasts</a></li>
+            <li><a href='#'>Apple Store</li>
+        </ul>
+        </div>
+        <div class="sub2-2">
+            <h4>Account</h4>
+        <ul>
+            <li><a href='#'>Manage your Apple Id</a></li>
+            <li><a href='#'>Apple Store Account</a></li>
+            <li><a href='#'>iCloud.com</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="sub-footer3">
+        <h4>Apple Store</h4>
+        <ul>
+            <li><a href='#'>Ways to Buy</a></li>
+            <li><a href='#'>Apple Trade in</a></li>
+            <li><a href='#'>Recyling Programme</a></li>
+            <li><a href='#'>Order Status</a></li>
+            <li><a href='#'>Shopping Help</a></li>
+        </ul>
+    </div>
+    <div class="sub-footer4">
+        <div class="sub4-1">
+            <h4>For Business</h4>
+            <ul>
+                <li><a href='#'>Apple And Business</a></li>
+            </ul>
+            </div>
+            <div class="sub4-2">
+                <h4>For Education</h4>
+                <ul>
+                    <li><a href='#'>Apple And Education</a></li>
+                    <li><a href='#'>Shop for Education</a></li>
+                </ul>
+                </div>
+                <div class="sub4-3">
+                    <h4>For Healthcare</h4>
+                    <ul>
+                        <li><a href='#'>Apple in healthcare</a></li>
+                        <li><a href='#'>Health on Apple</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="sub-footer5">
+        <div class="sub5-1">
+            <h4>Apple Values</h4>
+        <ul>
+            <li><a href='#'>Accessibility</a></li>
+            <li><a href='#'>Environment</a></li>
+            <li><a href='#'>Privacy</a></li>
+        </ul>
+    </div>
+    <div class="sub5-2">
+        <h4> ABout Apple</h4>
+        <ul>
+            <li><a href='#'>Newsroom</a></li>
+            <li><a href='#'>Apple leadership</a></li>
+            <li><a href='#'>Investors</a></li>
+        </ul>
+    </div>
+
+    </div>
+</div>
+<p style="font-size:25px; text-align: center;">
+    Copyright &copy; And Managed By <a href="mailto:harshbadaya2002@gmail.com">Harsh Badaya </a>2022
+</p>
+</footer>
+
+
+</body>
+</html>
